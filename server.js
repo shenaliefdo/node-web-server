@@ -65,7 +65,12 @@ app.get('/about',function(req,res){
     });
 });
 
- 
+app.get('/projects', function(req,res){
+    res.render('projects.hbs',{
+        pageTitle: 'Projects',
+        data: 'P1: server.'
+    });
+});
 
 app.get('/bad',function(req,res){
     res.send({
