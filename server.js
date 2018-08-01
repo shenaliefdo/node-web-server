@@ -30,10 +30,10 @@ app.use(function(req,res,next){
     next();
 });
 
-app.use(function(req,res,next){
-    res.render('maintenance.hbs');
+// app.use(function(req,res,next){
+//     res.render('maintenance.hbs');
    
-});
+// });
 
 //use static files in server with a handler
 app.use(express.static(__dirname + '/public'));
